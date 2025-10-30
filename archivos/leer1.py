@@ -1,0 +1,5 @@
+archivo = open("./archivos/e1.txt", "r")
+archivo.seek(10) 
+datos = archivo.readline()
+archivo.close()
+print(datos)
