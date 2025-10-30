@@ -41,25 +41,17 @@ def histograma_vocales():
     for v in vocales:
         conteo.append(texto.count(v))
     plt.bar(vocales, conteo, color="purple")
-    plt.title("Ocurrencia de vocales")
+    plt.title("Veces que se repiten las vocales")
     plt.show()
 
 def mostrar_csv():
     archivo = input("Nombre del archivo .csv: ")
-    try:
-        cantidad = int(input("¿Cuántas filas deseas imprimir?: "))
-    except:
-        print("Número inválido.")
-        return
     with open(ruta_base + archivo, newline="", encoding="utf-8") as f:
         lector = csv.reader(f)
-        filas = list(lector)
-        total = len(filas)
-        if cantidad > total:
-            print("No existen tantas filas. El archivo solo tiene", total)
-        else:
-            for i in range(cantidad):
-                print(filas[i])
+        for i, fila in enumerate(lector):
+            print(fila)
+            if i == 14:
+                break
 
 def calcular_estadisticas():
     archivo = input("Nombre del archivo .csv: ")
@@ -77,11 +69,11 @@ def calcular_estadisticas():
     if len(datos) == 0:
         print("No se encontraron datos numéricos en esa columna.")
         return
-    n = len(datos)
-    promedio = sum(datos) / n
+    calculo = len(datos)
+    promedio = sum(datos) / calculo
     minimo = min(datos)
     maximo = max(datos)
-    print("Cantidad:", n)
+    print("Cantidad:", calculo)
     print("Promedio:", promedio)
     print("Mínimo:", minimo)
     print("Máximo:", maximo)
@@ -102,13 +94,13 @@ def graficar_columna():
     if len(datos) == 0:
         print("No se encontraron datos numéricos en esa columna.")
         return
-    plt.scatter(range(len(datos)), datos, color="blue")
+    plt.scatter(range(len(datos)), datos, color="orange")
     plt.title("Gráfico de dispersión")
     plt.xlabel("Índice")
     plt.ylabel(columna)
     plt.show()
     datos_ordenados = sorted(datos)
-    plt.bar(range(len(datos_ordenados)), datos_ordenados, color="green")
+    plt.bar(range(len(datos_ordenados)), datos_ordenados, color="red")
     plt.title("Gráfico de barras")
     plt.xlabel("Índice")
     plt.ylabel(columna)
@@ -132,7 +124,7 @@ def menu_txt():
 
 def menu_csv():
     while True:
-        print("\n1. Mostrar filas del archivo")
+        print("\n1. Mostrar primeras 15 filas")
         print("2. Calcular estadísticas")
         print("3. Graficar columna")
         print("4. Volver")
@@ -148,7 +140,7 @@ def menu_csv():
 
 def main():
     while True:
-        print("\n--- Menú Principal ---")
+        print("\n Menú Principal ")
         print("1. Listar archivos")
         print("2. Procesar archivo .txt")
         print("3. Procesar archivo .csv")

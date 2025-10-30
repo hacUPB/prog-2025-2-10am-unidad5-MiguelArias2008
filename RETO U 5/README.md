@@ -19,17 +19,14 @@ Este programa permite trabajar con archivos de texto (.txt) y archivos de datos 
 ## ¿Cómo lo uso?
 1. Tener Python instalado en el computador.
 2. Instalar la librería matplotlib con este comando:
-   ```
-   pip install matplotlib
-   ```
+   **pip install matplotlib**
+
 3. Guardar los archivos **texto_reto.txt** y **info_reto.csv** en esta carpeta:
-   ```
-   C:/Users/Usuario/prog-2025-2-10am-unidad5-MiguelArias2008/RETO U 5/
-   ```
+   **C:/Users/Usuario/prog-2025-2-10am-unidad5-MiguelArias2008/RETO U 5/**
+
 4. Ejecutar el archivo del programa (por ejemplo **reto_unidad5.py**) desde la terminal:
-   ```
-   python reto_unidad5.py
-   ```
+   **python reto_unidad5.py**
+
 5. Usar el menú para elegir qué quieres hacer.
 
 ## ¿Qué contiene este proyecto?
@@ -38,4 +35,3 @@ Este programa permite trabajar con archivos de texto (.txt) y archivos de datos 
 - Un archivo CSV con datos reales.
 - Un archivo **analisis.md** donde explico lo que hice y cómo funciona.
 
-Gracias por revisar mi trabajo.
