@@ -35,3 +35,6 @@ Este programa permite trabajar con archivos de texto (.txt) y archivos de datos 
 - Un archivo CSV con datos reales.
 - Un archivo **analisis.md** donde explico lo que hice y cómo funciona.
 
+
+6. Link directo al video grabado:
+- Link al video: https://upbeduco.sharepoint.com/:v:/s/reto5/Ef04KIzWrh1PvNA71NEXqawBGEXzb4YpBb4KtKgdiMn63w?e=Zn6bjh
