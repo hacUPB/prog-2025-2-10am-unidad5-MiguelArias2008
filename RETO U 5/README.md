@@ -37,4 +37,4 @@ Este programa permite trabajar con archivos de texto (.txt) y archivos de datos 
 
 
 6. Link directo al video grabado:
-- Link al video: https://upbeduco.sharepoint.com/:v:/s/reto5/Ef04KIzWrh1PvNA71NEXqawBGEXzb4YpBb4KtKgdiMn63w?e=Zn6bjh
+- Link al video: https://upbeduco.sharepoint.com/:v:/s/reto5/Edayi2HrmxNCpfk-DT5c2gAB4E8Zqg5MWtCF4E_nYga3kg?e=eKMLW6
